@@ -1,4 +1,4 @@
-<template lang="pug">
+<template lang="jade">
   #app
     img(src="./assets/logo.png")
     hello
