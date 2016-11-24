@@ -1,4 +1,4 @@
-<template lang="jade">
+<template lang="pug">
   .hello
     h1 {{ msg }}
     h2 Essential Links
