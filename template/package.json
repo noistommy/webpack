@@ -16,6 +16,7 @@
     "vue": "^2.1.0"
   },
   "devDependencies": {
+    "pug": "^2.0.0-beta6",
     "autoprefixer": "^6.4.0",
     "babel-core": "^6.0.0",
     {{#lint}}
