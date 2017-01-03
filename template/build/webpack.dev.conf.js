@@ -4,11 +4,7 @@ var merge = require('webpack-merge')
 var utils = require('./utils')
 var baseWebpackConfig = require('./webpack.base.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
-<<<<<<< HEAD
-var DashboardPlugin = require('webpack-dashboard/plugin')
-=======
 var FriendlyErrors = require('friendly-errors-webpack-plugin')
->>>>>>> vuejs-templates/master
 
 // add hot-reload related code to entry chunks
 Object.keys(baseWebpackConfig.entry).forEach(function (name) {
@@ -35,10 +31,6 @@ module.exports = merge(baseWebpackConfig, {
       template: 'index.html',
       inject: true
     }),
-<<<<<<< HEAD
-    new DashboardPlugin()
-=======
     new FriendlyErrors()
->>>>>>> vuejs-templates/master
   ]
 })
