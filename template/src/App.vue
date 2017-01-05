@@ -2,7 +2,6 @@
   #app
     img(src="./assets/logo.png")
     hello
-  </div>
 </template>
 
 <script>
