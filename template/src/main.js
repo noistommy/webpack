@@ -19,5 +19,6 @@ import './assets/styles/styles.scss'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 /* eslint-disable no-new */
 new Vue({
+  router,
   ...App
 }).$mount('#app')
