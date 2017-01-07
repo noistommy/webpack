@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import store from 'src/vuex/store'
+import store from 'src/vuex/store'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 export default {
   store,
-  name: 'app'
-}
+  name: 'app'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 </script>
 
 <style>

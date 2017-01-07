@@ -1,9 +1,9 @@
-const files = require.context('.', false, /\.js$/)
-const modules = {}
+const files = require.context('.', false, /\.js$/){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+const modules = {}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 files.keys().forEach((key) => {
-  if (key === './index.js') return
-  modules[key.replace(/(\.\/|\.js)/g, '')] = files(key).default
-})
+  if (key === './index.js') return{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+  modules[key.replace(/(\.\/|\.js)/g, '')] = files(key).default{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+}){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
-export default modules
+export default modules{{#if_eq lintConfig "airbnb"}};{{/if_eq}}

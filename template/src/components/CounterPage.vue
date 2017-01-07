@@ -13,19 +13,19 @@
 export default {
   name: 'counter-page',
   computed: {
-    counter () {
-      return this.$store.getters.mainCounter
-    }
+    counter{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
+      return this.$store.getters.mainCounter{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+    }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   },
   methods: {
-    incrementCounter () {
-      this.$store.dispatch('incrementMain')
+    incrementCounter{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
+      this.$store.dispatch('incrementMain'){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
     },
-    decrementCounter () {
-      this.$store.dispatch('decrementMain')
-    }
-  }
-}
+    decrementCounter{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
+      this.$store.dispatch('decrementMain'){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+    }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 </script>
 
 <style lang="css" scoped>

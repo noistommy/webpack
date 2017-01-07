@@ -1,16 +1,19 @@
+import HomePage from 'components/HomePage'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import CounterPage from 'components/CounterPage'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+
 export default [
   {
     path: '/',
     name: 'home-page',
-    component: require('components/HomePage')
+    component: HomePage{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   },
   {
     path: '/counter',
     name: 'counter-page',
-    component: require('components/CounterPage')
+    component: CounterPage{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   },
   {
     path: '*',
-    redirect: '/'
-  }
-]
+    redirect: '/'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+]{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
