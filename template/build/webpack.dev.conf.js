@@ -32,7 +32,7 @@ module.exports = merge(baseWebpackConfig, {
       template: 'index.html',
       inject: true
     }),
-    new DashboardPlugin()
+    new DashboardPlugin(),
     new FriendlyErrors()
   ]
 })
