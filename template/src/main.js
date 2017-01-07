@@ -4,12 +4,21 @@
 {{/if_eq}}
 import Vue from 'vue'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import Router from 'vue-router'
+import routes from './routes'
+
+Vue.use(Router)
+const router = new Router({
+  scrollBehavior: () => ({ y: 0 }),
+  routes
+})
 
 // Styles
 import './assets/styles/styles.scss'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 /* eslint-disable no-new */
 new Vue({
+  router,
   el: '#app',
   {{#if_eq build "runtime"}}
   render: h => h(App){{#if_eq lintConfig "airbnb"}},{{/if_eq}}

@@ -1,7 +1,10 @@
-<template lang="pug">
-  #app
-    img(src="./assets/logo.png")
-    hello
+<template>
+  <div id="app">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+    </ul>
+    <router-view></router-view>
   </div>
 </template>
 
