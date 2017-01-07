@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>Counter</h1>
-    <div class="counter-number">{{counter}}</div>
+    <div class="counter-number">
+      \{{counter}}
+    </div>
     <button class="counter-button" v-on:click="incrementCounter">+</button>
     <button class="counter-button" v-on:click="decrementCounter">-</button>
   </div>
