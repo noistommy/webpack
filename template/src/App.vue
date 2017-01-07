@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <ul>
+    <ul class="navigation">
       <li><router-link v-bind:to="{ name: 'home-page' }">Home</router-link></li>
       <li><router-link v-bind:to="{ name: 'counter-page' }">Counter</router-link></li>
     </ul>
@@ -18,4 +18,15 @@ export default {
 </script>
 
 <style>
+.navigation {
+  list-style-type: none;
+  padding: 0;
+}
+.navigation li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.navigation a {
+  color: #42b983;
+}
 </style>

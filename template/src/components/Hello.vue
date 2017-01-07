@@ -17,6 +17,11 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <h2>Vue with companions (Vuex, Vue-router) Template</h2>
+    <ul>
+      <li><a href="https://github.com/ChangJoo-Park/webpack" target="_blank">Github Repo</a></li>
+      <li><a href="https://github.com/vuejs-kr" target="_blank">Vue.js Korean organization</a></li>
+    </ul>
   </div>
 </template>
 
