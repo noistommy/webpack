@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <ul>
-      <li>Home</li>
-      <li>About</li>
+      <li><router-link v-bind:to="{ name: 'home-page' }">Home</router-link></li>
+      <li><router-link v-bind:to="{ name: 'counter-page' }">Counter</router-link></li>
     </ul>
     <router-view></router-view>
   </div>

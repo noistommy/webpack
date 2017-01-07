@@ -5,7 +5,10 @@
 </template>
 
 <script>
+import store from 'vuex'
+
 export default {
+  store,
   name: 'counter-page'
 }
 </script>
